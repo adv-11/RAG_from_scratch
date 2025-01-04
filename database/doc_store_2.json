@@ -1,0 +1,202 @@
+{
+    "f88b25e8-fba4-47f9-b4cd-29292a14fa76": {
+        "33fcdb53-a347-45ab-a50f-e0ab6badbafb": {
+            "text": "Machine Learning Fundamentals Roadmap\n\n\nMachine Learning (ML) is a branch of artificial intelligence (AI) that focuses on building systems that can learn from data, identify patterns, and make decisions with minimal human intervention. Essentially, instead of hardcoding instructions, ML allows a model to learn from examples.\n\u2022\tArtificial Intelligence (AI): AI is the broader concept where machines are made to mimic human intelligence and behaviour. It includes many things like reasoning, problem-solving, learning, and perception.\n\u2022\tMachine Learning (ML): ML is a subset of AI that focuses specifically on how computers can learn from data without being explicitly programmed for every task. It\u2019s like teaching a machine to learn from experience.\n\u2022\tDeep Learning (DL): Deep Learning is a further subset of ML. It involves using complex models called neural networks that are inspired by the human brain. Deep Learning models can handle large datasets and learn intricate patterns, making them useful for tasks like image recognition and natural language",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "cf462a62-9082-422f-beae-0bbe3d518685": {
+            "text": "processing (NLP).\n \nApplications:\nMachine Learning is used in many places in the real world. Some examples include:\n\u2022\tRecommendation Systems: Platforms like Netflix and YouTube use ML to recommend movies, shows, or videos based on what you\u2019ve watched previously.\n\u2022\tImage Recognition: ML models help apps like Google Photos or Facebook automatically tag people in pictures, or in medical fields to detect diseases from medical images like X-rays.\n\u2022\tNatural Language Processing (NLP): This allows machines to understand, interpret, and generate human language. It\u2019s used in chatbots, virtual assistants like Siri or Alexa, and for translating languages (e.g., Google Translate).\n\n2. Mathematics for Machine Learning (Prerequisites)\n\u2022\tLinear Algebra:\no\tVectors and Matrices\no\tMatrix Operations (Addition, Multiplication)\no\tEigenvalues and Eigenvectors\no\tSingular Value Decomposition (SVD)\n\u2022\tProbability and Statistics:\no\tProbability Distributions (Gaussian,",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "961654f5-cb3d-4ff9-aef1-0fe81506e724": {
+            "text": "Bernoulli, Binomial, Poisson, etc.)\no\tDescriptive Statistics (Mean, Median, Mode, Variance, etc.)\no\tBayes Theorem and Conditional Probability\n\n3. Data Preprocessing\n \nBefore using machine learning algorithms, it\u2019s important to clean the data because real-world data is often incomplete, noisy, or inconsistent.\n1.Handling Missing Data:\nMissing data can cause issues in models, so it must be handled properly.\n\u2022\tImputation: Replacing missing values with some meaningful number. Common techniques include using the mean, median, or mode of the data to fill in the gaps.\n\u2022\tDropping: If too many values are missing or if the data point is not crucial, you can just remove the entire row or column with missing values.\n\n2. Outlier Detection and Treatment:\nOutliers are extreme values that are very different from the rest of the data. They can skew your model\u2019s performance if not handled.\n\u2022\tDetection: Methods like box plots",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "71b1253e-6157-4106-932c-ef0e2b10ada7": {
+            "text": "or standard deviation help identify outliers.\n\u2022\tTreatment: You can either remove the outliers or transform the data (e.g., using logarithmic transformations) to reduce the effect of outliers.\n\n3. Data Transformation\nTransforming data is crucial to ensure that it is in a suitable format for machine learning algorithms.\n\u2022\tNormalization: This scales data to fit within a specific range, usually between 0 and 1. It is helpful when your features have different units or scales.\n\u2022\tStandardization: This scales data to have a mean of 0 and a standard deviation of 1. It\u2019s useful when the data follows a Gaussian (normal) distribution.\n\u2022\tLogarithmic Transformation: Used when you have highly skewed data. It compresses large values while preserving relationships between smaller values.\n\n4. Feature Scaling:\n\u2022\tMin-Max Scaling: It scales all features to a range between 0 and 1. This is useful when you want all your features to have",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "7a5f541e-be34-4420-8ac0-4ebf5d088053": {
+            "text": "the same weight.\n\u2022\tZ-score Normalization: It transforms data into a distribution with a mean of 0 and standard deviation of 1. It\u2019s helpful when data is normally distributed and you want to standardize it.\n\n5. Feature Engineering\nFeature Engineering is about creating new features or transforming existing ones to make your model more effective. Features are the input data that the model uses to make predictions.\n\n\n\n\u2022\tEncoding Categorical Variables:\no\tOne-hot Encoding: This turns categorical values (like \"red,\" \"blue,\" \"green\") into binary (0/1) values. For example, if you have a \u201ccolour\u201d feature, one-hot encoding creates a separate column for each colour. [1, 0, 0] for Red, [0, 1, 0] for Blue, [0, 0, 1] for Green.\n\u2022\tLabel Encoding: This replaces categories with numbers. Instead of creating new columns like one-hot encoding, it simply assigns a unique",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "5a2372e5-d495-4241-b22f-46249ea0a25c": {
+            "text": "number to each category.\nExample: Red = 1, Blue = 2, Green = 3.\n\n6. Dimensionality Reduction:\n\u2022\tPCA (Principal Component Analysis): This reduces the number of features while keeping as much of the original information as possible. It transforms the data into a smaller set of variables (called principal components).\n\u2022\tLDA (Linear Discriminant Analysis): This is similar to PCA but is used when the target variable is categorical. LDA tries to find the feature combinations that best separate the categories.\n\n4. Types of Learning\n\nTypes of Machine Learning\nThere are several types of machine learning, and the type used depends on how the data is structured and the nature of the problem you\u2019re trying to solve. Let\u2019s dive into the main types:\n \n\n1. Supervised Learning\n\u2022\tDefinition:\nIn supervised learning, the machine is trained on a labelled dataset, meaning each input data point comes with a corresponding output or label. The goal is for the model",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "ce4253be-35ba-4afe-986d-0925bbfcca3a": {
+            "text": "to learn from the labelled data and make predictions for new, unseen data.\n\u2022\tHow it works:\nImagine you have a dataset of houses with features like size, number of bedrooms, and price. The machine learns from this data (input: house features, output: price) and can then predict the price of a new house based on its features.\n\u2022\tExample:\no\tClassification: Predicting if an email is spam or not spam (binary labels).\no\tRegression: Predicting the price of a house (continuous labels).\n\n\u2022\tCommon Algorithms:\no\tLinear Regression\no\tDecision Trees\no\tSupport Vector Machines (SVM)\no\tNeural Networks\n\n \n\n\n\n\n2. Unsupervised Learning\n\u2022\tDefinition:\nIn unsupervised learning, the machine is given data without labels. The task is to discover hidden patterns or structures in the data. There\u2019s no \u201ccorrect answer\u201d to guide the model; it has to figure things out on its own.\n\u2022\tHow it works:\nThink of it like",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "08bb8f68-41c1-4cd7-96c8-7d1bcd3147bc": {
+            "text": "giving the machine a pile of unsorted photos and asking it to group similar ones together. It doesn\u2019t know what each photo represents (no labels), but it can identify that some images are similar and should belong to the same group.\n\u2022\tExample:\no\tClustering: Grouping customers with similar purchasing behaviour for targeted marketing.\no\tAnomaly Detection: Identifying fraudulent transactions in a dataset of financial records by spotting unusual patterns.\n\u2022\tCommon Algorithms:\no\tK-Means Clustering\no\tHierarchical Clustering\no\tPrincipal Component Analysis (PCA)\n\n \n\n\n\n\n\n\n\n3. Semi-supervised Learning\n\u2022\tDefinition:\nSemi-supervised learning is a mix of supervised and unsupervised learning. In this approach, the model is trained on a small amount of labelled data and a large amount of unlabelled data. This is useful when labelling data is expensive or time-consuming, but you still want to make use of all available data.\n\u2022\tHow it works:\nLet\u2019s say you\u2019re building a model",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "9253b904-afc8-4378-be9e-62de7ae69816": {
+            "text": "to recognize different animals in images. Labelling thousands of images might be hard, but if you label only a few (like 100) and then let the machine learn from the rest of the unlabelled images, it can improve its performance.\n\u2022\tExample:\no\tA dataset with 1,000 photos, but only 100 are labelled. The model learns from both the labelled and unlabelled photos to improve its ability to identify new photos.\n\u2022\tCommon Algorithms:\no\tSelf-training\no\tCo-training\no\tSemi-supervised SVMs\n\n\n \n\n\n\n4. Reinforcement Learning\n\u2022\tDefinition:\nIn reinforcement learning, the machine learns by interacting with an environment. It takes actions and receives feedback in the form of rewards or penalties. The goal is to learn a strategy or policy that maximizes the total reward over time.\n\u2022\tHow it works:\nImagine training a robot to navigate a maze. The robot moves in the maze and gets positive rewards for moving towards the exit and negative rewards (penalties) for hitting walls. Over",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "80a61cf7-5ddd-4a83-bff6-6807edabb797": {
+            "text": "time, it learns the best actions to take at each step to get out of the maze faster.\n\u2022\tExample:\no\tTraining an AI to play a game like chess, where it learns from each move whether it\u2019s getting closer to winning or losing.\no\tSelf-driving cars learning to make driving decisions (like turning or stopping) based on traffic rules and conditions.\n\n \n\n\nIn machine learning, regression and classification are two fundamental types of tasks. Both deal with making predictions, but they do so in different ways:\n\u2022\tRegression: Predicts continuous values (e.g., predicting house prices, temperature, etc.).\n\u2022\tClassification: Predicts discrete labels or categories (e.g., predicting whether an email is spam or not).\n\n\n5. Regression\n1. Linear Regression\n\u2022\tDefinition:\nLinear regression is the simplest form of regression, where the model assumes a straight-line relationship between the input (features) and the output (target). The goal is to find the line that",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "fd3d5bd5-9e35-4605-b265-454b8f4c12d4": {
+            "text": "best fits the data.\n\u2022\tHow it works:\nIt predicts the target (Y) using a formula:\n\nY= mX + b \n\u2022\tWhere:\no\tX is the input data,\no\tm is the slope of the line (how steep the line is),\no\tb is the intercept (where the line crosses the Y-axis).\n\u2022\tExample:\nPredicting house prices based on the size of the house. A bigger house would usually have a higher price, and a linear regression model can draw a line through the data to predict prices.\n \n\n2. Polynomial Regression\n\u2022\tDefinition:\nPolynomial regression fits a curve (rather than a straight line) to the data by including powers of the input features. It's used when the relationship between the input and output is non-linear.\n\u2022\tHow it works:\nThe model takes the input XXX and raises it to different powers (like X2,X3X^2, X^3X2,X3) to fit more complex data",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "03d9e606-7d5b-4d8c-8156-456eb8c00bc8": {
+            "text": "patterns.\n\u2022\tExample:\nPredicting the growth of a population over time, where growth doesn\u2019t happen at a constant rate but speeds up over time. A polynomial curve fits this type of data better than a straight line.\n\n \n\n6. Classification\n\n1. Logistic Regression\n\u2022\tDefinition:\nDespite its name, logistic regression is used for classification, not regression. It predicts the probability of a binary outcome (like yes/no, 0/1). It\u2019s often used for binary classification problems.\n\u2022\tHow it works:\nInstead of fitting a straight line, it fits an S-shaped curve called a logistic function. The output is a probability between 0 and 1, which can be used to classify data into categories (e.g., if the probability is >0.5, classify as 1).\n\u2022\tExample:\nPredicting whether a student will pass or fail based on their study hours.\n\n \n\n\n2. Support Vector Machines (SVM)\n\u2022\tDefinition:\nSVM is a powerful classification algorithm",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "6efd74b9-d7b7-47ef-85c5-5a992cc5f594": {
+            "text": "that works by finding the best boundary (or hyperplane) that separates data points of different classes.\n\u2022\tHow it works:\nSVM looks for the hyperplane that maximizes the margin between different classes. The data points that are closest to the boundary are called support vectors.\n\u2022\tExample:\nClassifying emails as spam or not spam. SVM tries to find the best line (or plane) that separates the two categories.\n \n3. Decision Trees\n\u2022\tDefinition:\nA decision tree is a flowchart-like model where each internal node represents a decision based on a feature, each branch represents an outcome of that decision, and each leaf node represents a class label (or value for regression).\n\u2022\tHow it works:\nThe model splits the data based on the most important features at each step, forming a tree structure. It continues to split the data into smaller and smaller subsets until a decision is made.\n\u2022\tExample:\nDeciding whether to play outside based on weather conditions like",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "fee3e479-378f-41de-aa4c-d1496af90a64": {
+            "text": "\u201cSunny,\u201d \u201cWindy,\u201d or \u201cRainy.\u201d\n \n4. Random Forests\n\u2022\tDefinition:\nRandom Forest is an ensemble method that combines multiple decision trees to improve the accuracy and robustness of the prediction. It creates many trees using random subsets of data and features, and the final prediction is the average (for regression) or the majority vote (for classification) of all trees.\n\u2022\tHow it works:\nEach decision tree gives its own prediction, and the forest takes the most common prediction (in classification) or the average prediction (in regression).\n\u2022\tExample:\nPredicting whether a customer will buy a product based on their browsing history, where multiple trees analyse different aspects of the data.\n \n5. Naive Bayes\n\u2022\tDefinition:\nNaive Bayes is a classification algorithm based on Bayes\u2019 Theorem. It assumes that all features are independent of each other, which is why it\u2019s called \u201cnaive.\u201d Despite this assumption, it works surprisingly well for many real-world",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "14fed66a-f3c3-4b4e-8e50-f143096c855d": {
+            "text": "applications.\n\u2022\tHow it works:\nNaive Bayes calculates the probability of each class given the feature values and assigns the class with the highest probability.\n\u2022\tExample:\nClassifying emails as spam or not spam by calculating the likelihood of certain words (like \u201cwin,\u201d \u201cfree,\u201d \u201coffer\u201d) appearing in spam emails.\n \nUnsupervised learning involves finding patterns in data that isn't labelled. Here are two main types: Clustering (grouping similar data points together) and Dimensionality Reduction (simplifying data while preserving important information).\n7. Clustering\n\n1. K-Means Clustering:\n\u2022\tDefinition: K-Means is a popular clustering method that groups data into \u2018K\u2019 clusters based on similarity. It tries to divide the data points into K groups, where each group has data points that are close to each other.\n\u2022\tHow it works:\no\tFirst, we decide on a number, K, which is the number of",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "7b96bfc9-ce9f-4e2e-9f54-4af71417d608": {
+            "text": "clusters.\no\tThe algorithm randomly places K points (called centroids) in the data space.\no\tEach data point is assigned to the nearest centroid.\no\tThe centroids are adjusted to better fit the data points assigned to them.\no\tThe process repeats until the centroids don\u2019t move much.\n\u2022\tExample: Grouping customers based on buying habits. One cluster could be \"tech lovers,\" another could be \"bargain hunters.\"\n\n \n\n\n2. Hierarchical Clustering:\n\u2022\tDefinition: Hierarchical clustering builds a tree (hierarchy) of clusters, either by:\no\tAgglomerative approach: Start with each data point as its own cluster, then merge the closest clusters step by step.\no\tDivisive approach: Start with all data points in one big cluster, and then split them step by step.\n\u2022\tHow it works:\no\tEach data point starts as a single cluster.\no\tThe algorithm repeatedly merges the two closest clusters based on their distance from each other.\no\tThis continues until we",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "701c3075-ab3a-4003-9a26-9716b26aa6e6": {
+            "text": "have the desired number of clusters or a single cluster that includes all points.\n\u2022\tExample: Building a family tree of species in biology, where related species are grouped together.\n \n\n\n8.Dimensionality Reduction Algorithms\n1. Principal Component Analysis (PCA):\n\u2022\tDefinition: PCA is used to reduce the number of features (dimensions) in a dataset while keeping as much important information as possible. It transforms the data into a new set of dimensions (called principal components) that capture the most variation in the data.\n\u2022\tHow it works:\no\tThe algorithm identifies the directions (principal components) in which the data varies the most.\no\tIt projects the data onto these new components, reducing the dimensions while preserving the most important information.\n\u2022\tExample: If you have a dataset with 100 features (like an image with 100 pixels), PCA might reduce it to just 10 features while keeping the important patterns.\n\n2. Linear Discriminant Analysis (LDA):\n\u2022\tDefinition: LDA",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "a40b6f12-a366-462a-925e-9464d7041e69": {
+            "text": "is also a dimensionality reduction technique, but it\u2019s mainly used when we have labelled data (making it closer to supervised learning). It finds the feature combinations that best separate the classes in the data.\n\u2022\tHow it works:\no\tIt tries to find a new axis (or dimension) that maximizes the separation between the different classes (like distinguishing between cat and dog images).\no\tThe goal is to project the data onto a lower-dimensional space that keeps the differences between the classes as clear as possible.\n\u2022\tExample: LDA is used in face recognition systems, where it helps separate different faces based on key features.\n\n \n\n9.Ensemble Learning\n\nEnsemble learning is a technique in machine learning where multiple models (often called \u201cweak learners\u201d) are combined to create a stronger, more accurate model. The idea is that by combining the predictions of several models, we can reduce errors and improve performance. Here are some popular ensemble methods: \n \n\n1. Bagging (Bootstrap",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "1ca66653-cbe4-486b-b05d-c8130864cc2b": {
+            "text": "Aggregating)\n\u2022\tDefinition: Bagging is an ensemble method that involves training multiple versions of the same model on different subsets of the data and averaging their predictions. The subsets are created by randomly sampling the training data with replacement (this is called \u201cbootstrap\u201d sampling). By combining the predictions of many models, bagging reduces variance and helps prevent overfitting.\n\u2022\tExample: Think of it like asking multiple experts to give their opinion on a problem. By averaging their answers, you can get a more reliable prediction than from a single expert.\n\n\n2. Boosting\n\u2022\tDefinition: Boosting is an ensemble technique where models are trained sequentially, and each new model tries to correct the errors made by the previous ones. The idea is to improve the overall performance by focusing more on the difficult cases that earlier models struggled with.\n\u2022\tHow it works: Each weak model (like a decision tree) is added one at a time, and its predictions are adjusted based on the performance",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "cbd5442c-f248-4242-8d6d-256f9690208f": {
+            "text": "of the previous models.\n\nAdaBoost (Adaptive Boosting):\n\u2022\tDefinition: AdaBoost works by giving more weight to data points that were incorrectly predicted by the earlier models. The model tries harder to predict these points correctly in the next iteration.\n\u2022\tHow it works:\no\tInitially, all data points are given equal importance.\no\tAfter each iteration, the weights of incorrectly predicted points are increased, so the next model pays more attention to them.\no\tFinal predictions are made by combining the weighted predictions of all models.\nGradient Boosting:\n\u2022\tDefinition: Gradient Boosting trains models sequentially like AdaBoost but focuses on minimizing the loss (or error) of the model by taking a gradient-based approach. Each new model is trained to predict the residual errors (the difference between the actual and predicted values) of the previous model.\n\u2022\tHow it works:\no\tThe first model makes an initial prediction.\no\tThe next model predicts the errors (residuals) from the previous",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "452e50ce-7ac8-44bd-b071-50e5c66a73dd": {
+            "text": "model.\no\tThis process is repeated, and the final prediction is the sum of all the models' predictions.\nXGBoost: An efficient and scalable implementation of gradient boosting, which uses extra regularization to prevent overfitting.\n\n \n\n\n10. Hyperparameter Tuning\n\nHyperparameters are settings that are not learned by the model itself but are set by the user before training. Proper tuning of these hyperparameters can significantly improve a model\u2019s performance. Here are methods to search for the best hyperparameters:\n\n1. Grid Search:\n\u2022\tDefinition: Grid Search involves trying every possible combination of hyperparameters from a predefined set. It\u2019s an exhaustive search but can be time-consuming.\n\u2022\tHow it works:\no\tYou define a grid of possible hyperparameter values.\no\tThe model is trained and evaluated for each combination of hyperparameters.\no\tThe combination that gives the best performance on the validation data is",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "85e3edc9-691f-46ef-ae02-3da87af4db29": {
+            "text": "chosen.\n\u2022\tExample: If you\u2019re tuning a Random Forest model, Grid Search might try different values for the number of trees, max depth, etc., until it finds the best settings.\n\n\n\n\n2. Random Search:\n\u2022\tDefinition: Random Search is similar to Grid Search but instead of trying every combination, it selects random combinations of hyperparameters. It\u2019s faster than Grid Search but less exhaustive.\n\u2022\tHow it works:\no\tInstead of testing all combinations, it randomly selects a fixed number of combinations from the predefined grid and tests them.\no\tThe best combination is chosen based on model performance.\n\n \n\n\n\n\n\n11. Natural Language Processing\n\n (NLP)\nNatural Language Processing (NLP) is a field of machine learning focused on the interaction between computers and human language. It enables computers to read, understand, and derive meaning from human languages in a useful way. NLP is essential for tasks like language translation, text summarization, and chatbots.\n\n\n\nBasic NLP",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "748d8418-b10c-4166-9a71-34e616f08e39": {
+            "text": "Techniques\na. Tokenization\n\u2022\tTokenization is the process of breaking down text into smaller units, like words or sentences. These smaller units are called \"tokens.\"\n\u2022\tExample: The sentence \"I love machine learning\" is tokenized into: \u201cI\u201d, \u201clove\u201d , \u201cmachine\u201d, \u201clearning\u201d.\n\nb. Stemming and Lemmatization\n\u2022\tStemming: Reducing a word to its base or root form, often by chopping off the ends.\nExample: \"Running\", \"runs\" \u2192 \"run\".\n\u2022\tLemmatization: More advanced than stemming, it reduces words to their dictionary form, considering context.\nExample: \"Better\" \u2192 \"good\".\n\nc. Stop Words Removal\n\u2022\tDefinition: Stop words are common words (like \u201cthe\u201d, \u201cis\u201d, \u201cin\u201d) that are often removed because they don\u2019t contribute much to the meaning of the text.\n\u2022\tExample: In \"I am learning machine learning\", words like",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "7f61999d-6986-403c-91fe-9058efd47856": {
+            "text": "\u201cI\u201d and \u201cam\u201d could be removed.\n\nd. Bag of Words\n\u2022\tDefinition: A method to represent text as a set of words (or tokens), ignoring grammar and word order. The frequency of each word in the text is counted and used as a feature.\n\u2022\tExample: The sentences \"I love dogs\" and \"I love cats\" would have the following Bag of Words:\n\u201cI\u201d:1,\u201clove\u201d:1,\u201cdogs\u201d:1,\u201ccats\u201d:0\u201c\n\ne. Term Frequency-Inverse Document Frequency (TF-IDF)\n\u2022\tDefinition: TF-IDF is an improvement on the Bag of Words model. It weighs words by their importance. Words that appear frequently in a document but rarely across all documents get a higher score.\n\u2022\tExample: Common words like \u201cthe\u201d will have a low weight, while unique words like \u201cmachine\u201d will have a higher weight in a document about machine learning.\n\n\n\nNLP Tasks",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "c04027b7-1809-4d30-8d3b-8f4ed5735ba9": {
+            "text": "(Applications)\n\na. Text Classification\nExample: Categorizing a movie review as positive or negative.\nb. Sentiment Analysis\nExample: Analysing tweets to understand public opinion on a product.\nc. Machine Translation\nExample: Translating an English sentence to French using tools like Google Translate.\nd. Text Summarization\nExample: Summarizing a long news article into a few",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "1d0ddb6c-908e-4307-a5e5-bdd1b8922751": {
+            "text": "sentences.\n\n--------------------------------------------------------------------------------------------------------------------------------------\nADVANCED ML TECHNIQUES\n\nDeep Learning\nDeep Learning is a subset of machine learning that uses neural networks with many layers to model complex patterns in data. These models learn by adjusting weights and biases through the process of backpropagation and optimization.\n \n\n\n\n\n1. Neural Networks\nA Neural Network is a computational model inspired by the human brain.",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "0c475b86-9e65-4d57-bb2a-4955842a4669": {
+            "text": "It consists of layers of interconnected \"neurons\" that process input data and make predictions. \n\na. Artificial Neural Networks (ANN)\n\u2022\tDefinition: ANNs are the basic form of neural networks where information is passed through layers of neurons. Each neuron takes input, processes it, and passes it to the next layer.\n\u2022\tStructure:\no\tInput Layer: Takes in the data (e.g., pixels of an image, text).\no\tHidden Layers: Process the data through mathematical operations (like weighted sums and activation functions).\no\tOutput Layer: Produces the final prediction (e.g., a classification result).\n\u2022\tExample: In image recognition, an ANN can take an image as input and predict what\u2019s in it (e.g., cat or dog).\n\n\nb. Convolutional Neural Networks (CNN)\n\u2022\tDefinition: CNNs are specialized neural networks for processing grid-like data, such as images. They are designed to automatically detect patterns like",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "b3c980ae-548a-44da-a055-e952df848ee4": {
+            "text": "edges, textures, and shapes in images.\n\u2022\tKey Components:\no\tConvolution Layers: Use filters to scan the input data and create feature maps. Each filter learns to detect a specific feature, like a vertical edge.\no\tPooling Layers: Reduce the size of the feature maps by summarizing regions (e.g., taking the maximum value, called Max Pooling), which helps reduce computation.\no\tFully Connected Layers: Once the feature maps are processed, the CNN passes them through a regular neural network for final classification.\n\u2022\tExample: CNNs are commonly used in image recognition tasks (e.g., identifying objects in a photo) and can even be used for video analysis and medical image diagnosis.\n\n\nc. Recurrent Neural Networks (RNN)\n\u2022\tDefinition: RNNs are designed for sequential data, where the order of the data points matters (e.g., text, time series). RNNs maintain a \u201cmemory\u201d of previous inputs by passing",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "f08925da-c06d-4473-be4a-083d3fd2c33d": {
+            "text": "information from one step to the next.\n\u2022\tKey Feature: Each neuron has a connection not just to the next layer, but also to itself, allowing it to remember the previous input.\n\u2022\tLimitations: RNNs struggle with long sequences due to the vanishing gradient problem, where the network \u201cforgets\u201d earlier information.\n\u2022\tExample: RNNs are used for tasks like text generation, language translation, and speech recognition.\n\n\n2. Transformers (latest ML model with widespread applications in recent developments)\n \nTransformers are state-of-the-art models that have revolutionized NLP and many other fields. Unlike RNNs, they don\u2019t process data sequentially but use a self-attention mechanism to capture relationships between all elements of the input, regardless of their distance in the sequence.\na. Self-Attention Mechanism\n\u2022\tDefinition: Self-attention allows the model to weigh the importance of different parts of the input data when making a prediction. Each word or token in a sentence can \"attend\" to every",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "b200023b-215c-4666-ac0a-1ee5f8289df4": {
+            "text": "other word, capturing context and meaning across the whole sequence.\n\u2022\tHow it works:\no\tFor each word in a sentence, the self-attention mechanism computes how much focus it should give to every other word.\no\tThis helps the model understand relationships and dependencies in the data.\n\u2022\tExample: In a translation task, self-attention helps the model figure out which words in the source sentence relate to which words in the target sentence.\nb. Encoder-Decoder Architecture\n\u2022\tDefinition: The Transformer model uses an Encoder-Decoder structure, where:\no\tEncoder: Processes the input data and creates a representation.\no\tDecoder: Uses that representation to generate the output, such as translating a sentence or summarizing a text.\n\u2022\tExample: The encoder takes an English sentence, creates a deep understanding of it, and the decoder uses this understanding to generate the French translation.\n\u2022\tWhy it\u2019s powerful: This architecture allows transformers to handle complex",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "5ea4c6f1-1d9b-4e16-95a3-f7b527e6043d": {
+            "text": "tasks like language translation, text generation, and summarization more efficiently than older models like RNNs.\n\nRecent Developments\n\n \n\na. Large Language Models (LLMs) & Generative AI (GenAI)\n\u2022\tLLMs: are huge transformer-based models trained on massive datasets of text. They are capable of generating human-like text, answering questions, and understanding language in context.\n\u2022\tGenerative AI: GenAI uses these models to generate new data, whether it\u2019s text, images, or even code. These models are fine-tuned for tasks like writing stories, creating chatbots, and generating creative content.\n\n\n\n\nb. Retrieval-Augmented Generation (RAG)\n\u2022\tDefinition: RAG is a hybrid model that combines the power of retrieval systems (like search engines) with generative models (like GPT). Instead of generating text purely from its training, the model retrieves relevant documents from a knowledge base and uses them to improve its answers.\n\u2022\tHow it works:\no\tThe",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "8eacf745-4d00-4914-ae1b-88fe2ee563ef": {
+            "text": "model retrieves relevant information from external data sources.\no\tThen, it uses a generative model to provide a final, coherent answer that integrates the retrieved information.\n\u2022\tExample: A chatbot using RAG can fetch facts from a database to answer a question accurately and generate a fluent response.\n \nc. Generative Adversarial Networks (GANs)\n\u2022\tDefinition: GANs are a type of neural network used for generating realistic data, such as images, videos, or music. They consist of two models:\no\tGenerator: Tries to create realistic data.\no\tDiscriminator: Tries to distinguish between real and fake data.\n\u2022\tHow it works:\no\tThe generator creates fake data (e.g., an image).\no\tThe discriminator evaluates whether the data is real or fake.\no\tThe two networks are trained together until the generator becomes good enough at creating realistic data that the discriminator can\u2019t tell the difference.\n\u2022\tApplications:\no\tImage generation: GANs",
+            "metadata": {
+                "file_name": "sample"
+            }
+        },
+        "6c1615a5-3d16-4b74-a823-d4e48e56421e": {
+            "text": "can create realistic faces of people who don\u2019t exist.\no\tData augmentation: GANs can generate new training examples to improve the performance of machine learning models.\n\nFurther Reading: \nRegression In depth\nClassification in depth\nClustering in depth\nMarket Basket Analysis \u2013 Association Rules Application\nNeural Networks\nGenAI and LLMs\n\nAuthor:\nAdvait Shinde \nCheck out my Blog on Machine Learning!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "metadata": {
+                "file_name": "sample"
+            }
+        }
+    }
+}
