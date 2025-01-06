@@ -1,4 +1,4 @@
-<h1> RAG from Scratch <h1>
+ RAG from Scratch 
 
 Utilized the tensorflow library and simmilarity measures to create individual componoents of the RAG architecture, like Retriever, Chunking, Embedding Model, etc. 
 
